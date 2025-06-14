@@ -1,0 +1,1 @@
+"""Test package for MAVProxy MCP Server."""
