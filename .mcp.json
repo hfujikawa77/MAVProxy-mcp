@@ -1,0 +1,23 @@
+{
+    "mcpServers": {
+        "claude_code": {
+            "command": "/usr/local/bin/claude",
+            "args": [
+                "mcp",
+                "serve"
+            ],
+            "env": {}
+        },
+        "mavproxy-mcp": {
+            "command": "python",
+            "args": [
+                "-m",
+                "src.mavproxy_mcp.server"
+            ],
+            "cwd": "/home/ardupilot/GitHub/MAVProxy-mcp",
+            "env": {
+                "PYTHONPATH": "/home/ardupilot/GitHub/MAVProxy-mcp"
+            }
+        }
+    }
+}
